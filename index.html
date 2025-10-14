@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RizzBot - Tu Guía Turístico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>🌎 TravelBot</h1>
+            <p>Tu guía de lugares turísticos y exóticos del mundo</p>
+        </div>
+        
+        <div class="chat-box" id="chatBox">
+            <div class="bot-message">
+                ¡Hola! Soy TravelBot, tu asistente virtual de turismo. 
+                Puedo recomendarte lugares increíbles alrededor del mundo. 
+                ¿A qué continente o país te gustaría viajar? 🌍✈️
+            </div>
+        </div>
+        
+        <div class="suggestions">
+            <button class="suggestion-btn" onclick="insertSuggestion('Europa')">Europa</button>
+            <button class="suggestion-btn" onclick="insertSuggestion('Asia')">Asia</button>
+            <button class="suggestion-btn" onclick="insertSuggestion('América')">América</button>
+            <button class="suggestion-btn" onclick="insertSuggestion('África')">África</button>
+            <button class="suggestion-btn" onclick="insertSuggestion('Lugares exóticos')">Lugares Exóticos</button>
+        </div>
+        
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Pregunta sobre destinos turísticos..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Enviar ✈️</button>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
