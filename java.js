@@ -35,6 +35,7 @@ async function sendMessage() {
     }
 }
 
+// Las demás funciones se mantienen igual...
 function displayMessage(message, sender) {
     const chatBox = document.getElementById('chatBox');
     const messageDiv = document.createElement('div');
