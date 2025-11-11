@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RizzBot - Tu Guía Turístico</title>
+    <title>TravelBot - Tu Guía Turístico con IA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="chat-container">
         <div class="chat-header">
-            <h1>🌎 TravelBot</h1>
-            <p>Tu guía de lugares turísticos y exóticos del mundo</p>
+            <h1>🌎 TravelBot AI</h1>
+            <p>Tu guía turístico inteligente con Gemini AI</p>
         </div>
         
         <div class="chat-box" id="chatBox">
             <div class="bot-message">
-                ¡Hola! Soy TravelBot, tu asistente virtual de turismo. 
-                Puedo recomendarte lugares increíbles alrededor del mundo. 
-                ¿A qué continente o país te gustaría viajar? 🌍✈️
+                ¡Hola! Soy TravelBot con tecnología Gemini AI 🌍✈️ 
+                <br><br>
+                Puedo ayudarte a descubrir destinos increíbles alrededor del mundo, darte consejos de viaje y planificar tu próxima aventura.
+                <br><br>
+                ¿A dónde te gustaría viajar?
             </div>
         </div>
         
         <div class="suggestions">
-            <button class="suggestion-btn" onclick="insertSuggestion('Europa')">Europa</button>
-            <button class="suggestion-btn" onclick="insertSuggestion('Asia')">Asia</button>
-            <button class="suggestion-btn" onclick="insertSuggestion('América')">América</button>
-            <button class="suggestion-btn" onclick="insertSuggestion('África')">África</button>
-            <button class="suggestion-btn" onclick="insertSuggestion('Lugares exóticos')">Lugares Exóticos</button>
+            <button class="suggestion-btn" onclick="insertSuggestion('Recomiéndame playas paradisíacas')">🏖️ Playas</button>
+            <button class="suggestion-btn" onclick="insertSuggestion('Lugares culturales en Europa')">🏛️ Cultura Europa</button>
+            <button class="suggestion-btn" onclick="insertSuggestion('Destinos exóticos únicos')">🌟 Exóticos</button>
+            <button class="suggestion-btn" onclick="insertSuggestion('Consejos para viajar por Asia')">🌏 Asia Tips</button>
+            <button class="suggestion-btn" onclick="insertSuggestion('Aventura en montañas')">⛰️ Aventura</button>
         </div>
         
         <div class="input-container">
-            <input type="text" id="userInput" placeholder="Pregunta sobre destinos turísticos..." onkeypress="handleKeyPress(event)">
+            <input type="text" id="userInput" placeholder="Pregunta sobre destinos, consejos de viaje..." onkeypress="handleKeyPress(event)">
             <button onclick="sendMessage()">Enviar ✈️</button>
         </div>
     </div>
